@@ -1,0 +1,101 @@
+<div>
+    <div class="parent">
+        <div class="card card1" style="margin-right: 10%;">
+            <div>
+                <img class="image-style" src="../../assets/login/main_open.jpg">
+            </div>
+            <div class="card" style="border: transparent;">
+                <!-- <span style="    text-align: center;font-size: 482%;margin-top: 5%;font-family: cursive;">Expense
+                    Analyser</span> -->
+                <img src="../../assets/logo/logo-color-main.png" style="    margin-top: 5%;height: 88%;width: 112%;">
+            </div>
+        </div>
+        <div class="card" style="width: 40%;border: transparent;height: 100vh;">
+            <div>
+                <div class="card inside-box" *ngIf="show_login">
+                    <div class="box-head">
+                        Login
+                    </div>
+                    <div class="card-body mt-4">
+                        <div class="col-12 mt-3">
+                            <label for="username">Username*</label>
+                            <input type="text" class="form-control mt-2" placeholder="Enter Username"
+                                [(ngModel)]="login_object['username']" required>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <label for="username">Password*</label>
+                            <input type="password" class="form-control mt-2" placeholder="Enter Password"
+                                [(ngModel)]="login_object['password']" required>
+                        </div>
+                        <div class="mt-5" style="text-align:center">
+                            <button class="btn btn-primary  button-style" (click)="loginUser()">Login</button>
+                        </div>
+                        <div class="mt-5 forgot-password">
+                            <a href="http://localhost:4200/login">Forgot Password?</a>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="col-4 mt-2">
+                                <a>Not a member?</a>
+                            </div>
+                            <div>
+                                <button class="sign-up-button mt-2" (click)="showSignUp()">Sign Up</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card inside-box" *ngIf="!show_login">
+                    <div class="box-head">
+                        Sign Up
+                    </div>
+                    <div class="card-body table-responsive scrollbar-primary mt-1">
+                        <div class="col-12 mt-2">
+                            <label for="name">Name*</label>
+                            <input type="text" class="form-control input-sm" placeholder="Enter Your Name"
+                                [(ngModel)]="signup_object['name']" required="">
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="username">Username*</label>
+                            <input type="text" class="form-control input-sm" placeholder="Enter Your Preferred Username"
+                                [(ngModel)]="signup_object['username']" required="">
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="email">Email*</label>
+                            <input type="email" class="form-control input-sm" placeholder="Enter Your Email"
+                                [(ngModel)]="signup_object['email']" required="">
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="phone">Phone Number*</label>
+                            <input type="phone" class="form-control input-sm" placeholder="Enter Your Mobile Number"
+                                [(ngModel)]="signup_object['phone']" required="">
+                        </div>
+                        <div class="col-12 mt-2 ">
+                            <label for="password">Password*</label>
+                            <input type="password" class="form-control input-sm " placeholder="Enter Your Password"
+                                [(ngModel)]="signup_object['password']" required="">
+                        </div>
+
+                    </div>
+                    <div class="card-footer" style="border:transparent; ">
+                        <div class="mt-2" style="text-align:center">
+                            <button class="btn btn-primary  button-style" style="width:23%" (click)="signUpUser()">Sign
+                                Up</button>
+                        </div>
+
+
+                        <div class="d-flex">
+                            <div class="col-5 mt-2">
+                                <a>Already a member?</a>
+                            </div>
+                            <div>
+                                <button class="sign-up-button mt-2" (click)="showLogin()">Login</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

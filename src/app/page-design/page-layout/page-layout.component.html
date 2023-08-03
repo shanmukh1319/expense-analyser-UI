@@ -1,0 +1,28 @@
+
+    <div style="    background-color:#b9f3fc49;">
+    <div>
+        <app-page-header></app-page-header>
+    </div>
+    <div class="body-style">
+        <div class="row m-0">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <app-first-tile></app-first-tile>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <app-second-tile></app-second-tile>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <app-forth-tile (selected_table_category_type)="getCategoryType($event)"></app-forth-tile>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <app-third-tile [category_name]="table_category_type"></app-third-tile>
+            </div>
+        </div>
+    </div>
+</div>

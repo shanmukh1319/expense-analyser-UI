@@ -1,0 +1,52 @@
+.image-style{
+    border-radius: 25%; background-color: white;
+}
+
+.nav-style{
+    background-color: #9ADCFF;
+    height: 60px;
+}
+
+.menu-icon{
+     cursor: pointer; 
+}
+
+.off-style{
+    background-color:#9ADCFF
+}
+
+.menu-items{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fdfeff;
+    display: block;
+    transition: 0.3s;
+
+  }
+
+  .menu-items:hover {
+    color: #050000;
+  }
+
+  .profile-style{
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-menu{
+    margin-top: 5%;
+  }
+
+  .menu-item{
+    text-align: center;
+    font-size: 128%;
+    font-weight: 500;
+
+  }
+
+  .icon-tips{
+    margin-right: 4%;
+  }
