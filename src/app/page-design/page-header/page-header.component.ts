@@ -12,4 +12,8 @@ export class PageHeaderComponent {
   activateTab(tab_type: string) {
     this.present_tab = tab_type
   }
+
+  clickOnCategories(){
+    
+  }
 }
